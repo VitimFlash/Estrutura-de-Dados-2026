@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Estrutura de Dados.iml" filepath="$PROJECT_DIR$/.idea/Estrutura de Dados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exe1/Exe1.iml" filepath="$PROJECT_DIR$/Exe1/Exe1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Teoria/Teoria.iml" filepath="$PROJECT_DIR$/Teoria/Teoria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fatoracao/Teorias.iml" filepath="$PROJECT_DIR$/Fatoracao/Teorias.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trabalho B1/Trabalho B1.iml" filepath="$PROJECT_DIR$/Trabalho B1/Trabalho B1.iml" />
+    </modules>
+  </component>
+</project>
