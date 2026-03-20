@@ -107,8 +107,8 @@ public class trabalho {
         long duracaoNano = fim - inicio;
         double duracaoMili = (double)duracaoNano / (double)1.0E7F;
         System.out.println("\nTempo de execução: " + duracaoMili + " ms");
-        int[] vetB1 = new int[100];
 
+        int[] vetB1 = new int[100];
         System.out.println("\n\nVetor invertido");
         int j = 0;
         for(int i = 99; i >= 0; --i) {
@@ -184,17 +184,17 @@ public class trabalho {
 
         System.out.println("\nMudança do vetor aleatório por SelectionSort");
         inicio = System.nanoTime();
-        bubble(vetS2);
+        selection(vetS2);
         fim = System.nanoTime();
         duracaoNano = fim - inicio;
         duracaoMili = (double)duracaoNano / (double)1.0E7F;
         System.out.println("\nTempo de execução: " + duracaoMili + " ms");
-        int[] vetID = new int[100];
 
+        int[] vetID = new int[100];
         System.out.println("\nInsectionSort\nVetor ordenado");
         for(int i = 0; i < vetID.length; ++i) {
             vetID[i] = i;
-            System.out.print(vetID[i] + "  ");
+           System.out.print(vetID[i] + "  ");
         }
         System.out.println("\nMudança do vetor ordenado por InsectionSort");
         inicio = System.nanoTime();
@@ -217,7 +217,7 @@ public class trabalho {
 
         System.out.println("\nMudança do vetor invertido por InsectionSort");
         inicio = System.nanoTime();
-        selection(vetID1);
+        insection(vetID1);
         fim = System.nanoTime();
         duracaoNano = fim - inicio;
         duracaoMili = (double)duracaoNano / (double)1.0E7F;
@@ -232,7 +232,7 @@ public class trabalho {
 
         System.out.println("\nMudança do vetor aleatório por InsectionSort");
         inicio = System.nanoTime();
-        bubble(vetID2);
+        insection(vetID2);
         fim = System.nanoTime();
         duracaoNano = fim - inicio;
         duracaoMili = (double)duracaoNano / (double)1.0E7F;
@@ -242,7 +242,7 @@ public class trabalho {
         System.out.println("\nQuickSort\nVetor ordenado");
         for(int i = 0; i < vetQ.length; ++i) {
             vetQ[i] = i;
-            System.out.print(vetQ[i] + "  ");
+           System.out.print(vetQ[i] + "  ");
         }
         System.out.println("\nMudança do vetor ordenado por QuickSort");
         inicio = System.nanoTime();
@@ -266,23 +266,25 @@ public class trabalho {
 
         System.out.println("\nMudança do vetor invertido por QuickSort");
         inicio = System.nanoTime();
-        selection(vetQ1);
+        quick(vetQ1, 0, vetQ1.length -1);
         fim = System.nanoTime();
         duracaoNano = fim - inicio;
+        System.out.println(Arrays.toString(vetQ1));
         duracaoMili = (double)duracaoNano / (double)1.0E7F;
         System.out.println("\nTempo de execução: " + duracaoMili + "ms");
 
         int[] vetQ2 = new int[100];
         System.out.println("\n\nVetor Aleatório");
         for(int i = 0; i < vetQ2.length; ++i) {
-            vetQ2[i] = (int)(Math.random() * (double)100.0F);
+            vetQ2[i] = (int)(Math.random() * (double)100000.0F);
             System.out.print(vetQ2[i] + "  ");
         }
 
         System.out.println("\nMudança do vetor aleatório por QuickSort");
         inicio = System.nanoTime();
-        bubble(vetQ2);
+        quick(vetQ2, 0 , vetQ2.length-1);
         fim = System.nanoTime();
+        System.out.println(Arrays.toString(vetQ2));
         duracaoNano = fim - inicio;
         duracaoMili = (double)duracaoNano / (double)1.0E7F;
         System.out.println("\nTempo de execução: " + duracaoMili + " ms");
